@@ -1,5 +1,5 @@
 import { CarProductInterface, CarEngineType, CarBreakSystemType } from '../interfaces/product.interface';
-import { BuilderInterface } from '../interfaces/component.interface';
+import { BuilderInterface, Constructable } from '../interfaces/component.interface';
 import SkylineProduct from '../product/skyline-product';
 
 /**
@@ -11,16 +11,17 @@ import SkylineProduct from '../product/skyline-product';
 class CarBuilder implements BuilderInterface<
     CarProductInterface,
     CarEngineType,
-    CarBreakSystemType
+    CarBreakSystemType,
+    CarProductInterface
 > {
     product: CarProductInterface;
 
-    constructor() {
-        this.product = this.reset();
+    constructor(classProduct: Constructable<CarProductInterface>) {
+        this.product = this.reset(classProduct);
     }
 
-    reset(): CarProductInterface {
-        return new SkylineProduct();
+    reset(classProduct: Constructable<CarProductInterface>): CarProductInterface {
+        return new classProduct();
     }
 
     setSeats(seat: number): this {

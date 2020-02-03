@@ -1,5 +1,5 @@
 import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from '../interfaces/product.interface';
-import { BuilderInterface } from '../interfaces/component.interface';
+import { BuilderInterface, Constructable } from '../interfaces/component.interface';
 import CBRProduct from '../product/cbr-product';
 
 /**
@@ -11,16 +11,17 @@ import CBRProduct from '../product/cbr-product';
 class MotorCycleBuilder implements BuilderInterface<
     MotorCycleInterface,
     MotorCycleInterfaceEngineType,
-    MotorCycleInterfaceBreakSystemType
+    MotorCycleInterfaceBreakSystemType,
+    MotorCycleInterface
 > {
     product: MotorCycleInterface;
 
-    constructor() {
-        this.product = this.reset();
+    constructor(classProduct: Constructable<MotorCycleInterface>) {
+        this.product = this.reset(classProduct);
     }
 
-    reset(): MotorCycleInterface {
-        return new CBRProduct();
+    reset(classProduct: Constructable<MotorCycleInterface>): MotorCycleInterface {
+        return new classProduct();
     }
 
     setSeats(seat: number): this {
