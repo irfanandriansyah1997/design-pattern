@@ -8,7 +8,8 @@
     "scripts": {
         "abstract-factory": "ts-node pattern/creational-pattern/abstract-factory/index.ts",
         "builder": "ts-node pattern/creational-pattern/builder/index.ts",
-        "method-decorator": "ts-node pattern/another/decorator/method-decorator/index.ts"
+        "method-decorator": "ts-node pattern/another/decorator/method-decorator/index.ts",
+        "property-decorator": "ts-node pattern/another/decorator/property-decorator/index.ts"
     },
     "devDependencies": {
         "ts-node": "^8.6.2",
