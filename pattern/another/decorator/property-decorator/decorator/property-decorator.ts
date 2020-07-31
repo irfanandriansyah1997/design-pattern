@@ -1,5 +1,5 @@
 /**
- * Logger Decorator
+ * Integer Decorator
  * @author Irfan Andriansyah <irfan@99.co>
  * @param {boolean} enumerable - enumarable property
  * @since 2020.07.31
