@@ -1,0 +1,20 @@
+version: 2.1
+
+jobs:
+    web:
+        docker:
+            - image: circleci/node:12.20.0
+
+        working_directory: ~/design-pattern
+        steps:
+            - checkout
+            - run: yarn install
+            - run: yarn run lint
+            - run: yarn run test
+            - run: bash <(curl -s https://codecov.io/bash)
+
+workflows:
+    version: 2
+    concurrently:
+        jobs:
+            - web
