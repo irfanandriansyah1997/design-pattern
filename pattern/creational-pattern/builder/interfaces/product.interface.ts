@@ -1,7 +1,7 @@
 /**
  * Car Product Interface
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2020.02.03
  */
 export interface CarProductInterface {
@@ -18,7 +18,7 @@ export type CarBreakSystemType = 'cakram' | 'tromol';
 /**
  * Motor Cycle Product Interface
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2020.02.03
  */
 export interface MotorCycleInterface {

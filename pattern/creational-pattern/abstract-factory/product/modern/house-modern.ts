@@ -5,7 +5,7 @@ import {
     AbstractBedRoom,
     AbstractLivingRoom,
     roomType
-} from '../../intefaces/component.interface';
+} from '@/creational-pattern/abstract-factory/intefaces/component.interface';
 
 class HouseModern implements HouseFactory {
     bedRoom = (): AbstractBedRoom => new Bedroom();

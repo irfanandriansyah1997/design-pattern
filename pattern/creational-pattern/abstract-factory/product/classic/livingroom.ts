@@ -1,9 +1,9 @@
-import { AbstractLivingRoom } from '../../intefaces/component.interface';
+import { AbstractLivingRoom } from '@/creational-pattern/abstract-factory/intefaces/component.interface';
 
 class Livingroom implements AbstractLivingRoom {
-    lengthRoom: number = 40;
+    lengthRoom = 40;
 
-    widthRoom: number = 40;
+    widthRoom = 40;
 
     isHaveChair = (): boolean => false;
 

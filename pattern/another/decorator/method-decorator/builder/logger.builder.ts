@@ -7,7 +7,7 @@
 class LoggerBuilder {
     private type: 'log' | 'info' | 'debug' | 'error' = 'log';
 
-    private message: string = '';
+    private message = '';
 
     /**
      * Setter Type
