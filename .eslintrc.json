@@ -10,8 +10,7 @@
         "eslint:recommended",
         "prettier/@typescript-eslint",
         "plugin:@typescript-eslint/recommended",
-        "eslint-config-prettier",
-        "jest"
+        "eslint-config-prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -21,7 +20,9 @@
     "plugins": [
         "@typescript-eslint",
         "require-jsdoc-except",
-        "simple-import-sort"
+        "simple-import-sort",
+        "sort-destructure-keys",
+        "jest"
     ],
     "rules": {
         "indent": [
@@ -48,7 +49,9 @@
                 "caseSensitive": false
             }
         ],
-        "simple-import-sort/sort": [
+        "sort-imports": "off",
+        "import/order": "off",
+        "simple-import-sort/imports": [
             "error",
             {
                 "groups": [
