@@ -9,12 +9,13 @@ module.exports = {
     collectCoverageFrom: [
         'pattern/**/*.{js,jsx,ts,tsx}'
     ],
-    moduleNameMapper: {
-        '^.+\\.(css|less|scss)$': 'babel-jest'
-    },
     coverageDirectory: '.jest_coverage/',
     coverageReporters: ['json', 'lcov', 'text', 'clover'],
     moduleFileExtensions: ['js', 'jsx', 'es6', 'ts', 'tsx'],
+    moduleNameMapper: {
+        '^.+\\.(css|less|scss)$': 'babel-jest',
+        '@/(.*)$': '<rootDir>/./pattern/$1'
+    },
     transform: {
         '^.+\\.js$': 'babel-jest',
         '^.+\\.jsx$': 'babel-jest',
@@ -27,4 +28,4 @@ module.exports = {
     setupFilesAfterEnv: [
         'jest-canvas-mock'
     ]
-}
+};

@@ -46,7 +46,6 @@
         "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
         "resolveJsonModule": true,
         "paths": {
-            "@/another/*": ["./pattern/another/*"],
             "@/behavioral-pattern/*": ["./pattern/behavioral-pattern/*"],
             "@/creational-pattern/*": ["./pattern/creational-pattern/*"],
             "@/structural-pattern/*": ["./pattern/structural-pattern/*"],
