@@ -16,7 +16,8 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "require-jsdoc-except"
+        "require-jsdoc-except",
+        "simple-import-sort"
     ],
     "rules": {
         "indent": [
@@ -37,6 +38,38 @@
         ],
         // custom setting
         "@typescript-eslint/ban-types": ["off"],
+        "sort-destructure-keys/sort-destructure-keys": [
+            "error",
+            {
+                "caseSensitive": false
+            }
+        ],
+        "simple-import-sort/sort": [
+            "error",
+            {
+                "groups": [
+                    // Packages. `react` related packages come first.
+                    ["^@?\\w"],
+                    [
+                        "@/repository/rest",
+                        "(?=.*.helper$)",
+                        "(?=.*.abstract$)",
+                        "(?=.*.builder$)"
+                    ],
+                    ["(?=.*.interface$)"],
+                    ["(?=.*.const$)"],
+                    ["(?=.*.spec$)"],
+                    [
+                        "^\\u0000",
+                        "^\\.\\.(?!/?$)",
+                        "^\\.\\./?$",
+                        "^\\./(?=.*/)(?!/?$)",
+                        "^\\.(?!/?$)",
+                        "^\\./?$"
+                    ]
+                ]
+            }
+        ],
         "require-jsdoc-except/require-jsdoc": [
             "error",
             {
