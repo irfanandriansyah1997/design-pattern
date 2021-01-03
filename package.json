@@ -1,6 +1,6 @@
 {
     "name": "design-pattern",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "main": "index.js",
     "repository": "git@github.com:irfanandriansyah1997/design-pattern.git",
     "author": "Irfan Andriansyah",
@@ -16,11 +16,8 @@
         "test:watch": "jest --watch --coverage=true",
         "test:without-coverage": "jest -w 2 --verbose pattern --cache --collectCoverage=false",
         "lint": "node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx pattern",
-        "abstract-factory": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/creational-pattern/abstract-factory/index.ts",
-        "builder": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/creational-pattern/builder/index.ts",
-        "accessor-decorator": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/another/decorator/accessor-decorator/index.ts",
-        "method-decorator": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/another/decorator/method-decorator/index.ts",
-        "property-decorator": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/another/decorator/property-decorator/index.ts"
+        "publish:tag": "sh etc/git-tags/update-tags.sh",
+        "abstract-factory": "ts-node -T -r  tsconfig-paths/register --project ./tsconfig.json pattern/creational-pattern/abstract-factory/index.ts"
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.12.7",

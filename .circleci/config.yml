@@ -13,8 +13,23 @@ jobs:
             - run: yarn run test
             - run: bash <(curl -s https://codecov.io/bash)
 
+    deploy-new-tags:
+        docker:
+            - image: circleci/node:12.20.0
+
+        working_directory: ~/design-pattern
+        steps:
+            - checkout
+            - run: sh etc/git-tags/update-tags.sh
+
 workflows:
     version: 2
     concurrently:
         jobs:
             - web
+            - deploy-new-tags:
+                  requires:
+                      - web
+                  filters:
+                      branches:
+                          only: master
