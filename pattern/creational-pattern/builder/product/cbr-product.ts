@@ -1,4 +1,4 @@
-import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from "../interfaces/product.interface";
+import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from "@/creational-pattern/builder/interfaces/product.interface";
 
 class CBRProduct implements MotorCycleInterface {
     seats: number = 0;

@@ -1,6 +1,6 @@
-import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from '../interfaces/product.interface';
-import { BuilderInterface, Constructable } from '../interfaces/component.interface';
-import CBRProduct from '../product/cbr-product';
+import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from '@/creational-pattern/builder/interfaces/product.interface';
+import { BuilderInterface, Constructable } from '@/creational-pattern/builder/interfaces/component.interface';
+
 
 /**
  * MotorCycle Builder Class

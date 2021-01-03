@@ -1,4 +1,4 @@
-import { CarProductInterface, CarEngineType, CarBreakSystemType } from "../interfaces/product.interface";
+import { CarProductInterface, CarEngineType, CarBreakSystemType } from "@/creational-pattern/builder/interfaces/product.interface";
 
 class SkylineProduct implements CarProductInterface {
     seats: number = 0;

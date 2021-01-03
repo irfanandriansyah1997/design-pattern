@@ -1,6 +1,6 @@
-import { CarProductInterface, CarEngineType, CarBreakSystemType } from '../interfaces/product.interface';
-import { BuilderInterface, Constructable } from '../interfaces/component.interface';
-import SkylineProduct from '../product/skyline-product';
+import { CarProductInterface, CarEngineType, CarBreakSystemType } from '@/creational-pattern/builder/interfaces/product.interface';
+import { BuilderInterface, Constructable } from '@/creational-pattern/builder/interfaces/component.interface';
+
 
 /**
  * Car Builder Class

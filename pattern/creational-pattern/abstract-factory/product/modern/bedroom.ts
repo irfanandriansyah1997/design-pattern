@@ -1,4 +1,4 @@
-import { AbstractBedRoom } from '../../intefaces/component.interface';
+import { AbstractBedRoom } from '@/creational-pattern/abstract-factory/intefaces/component.interface';
 
 class Bedroom implements AbstractBedRoom {
     lengthRoom: number = 40;
