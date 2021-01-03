@@ -1,15 +1,10 @@
 /**
  * Builder Interface
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2020.02.03
  */
-export interface BuilderInterface<
-    Product,
-    Engine,
-    BreakSystem,
-    ClassProduct
-> {
+export interface BuilderInterface<Product, Engine, BreakSystem, ClassProduct> {
     product: ClassProduct;
     reset(classProduct: Constructable<ClassProduct>): Product;
     setSeats(seat: number): this;
@@ -19,5 +14,5 @@ export interface BuilderInterface<
 }
 
 export interface Constructable<T> {
-    new() : T;
+    new (): T;
 }

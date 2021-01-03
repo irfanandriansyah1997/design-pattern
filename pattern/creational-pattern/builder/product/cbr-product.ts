@@ -1,13 +1,17 @@
-import { MotorCycleInterface, MotorCycleInterfaceEngineType, MotorCycleInterfaceBreakSystemType } from "@/creational-pattern/builder/interfaces/product.interface";
+import {
+    MotorCycleInterface,
+    MotorCycleInterfaceEngineType,
+    MotorCycleInterfaceBreakSystemType
+} from '@/creational-pattern/builder/interfaces/product.interface';
 
 class CBRProduct implements MotorCycleInterface {
-    seats: number = 0;
+    seats = 0;
 
     engine: MotorCycleInterfaceEngineType = '2 tak';
 
     breakSystem: MotorCycleInterfaceBreakSystemType = 'cakram';
 
-    color: string = 'hitam';
+    color = 'hitam';
 }
 
 export default CBRProduct;

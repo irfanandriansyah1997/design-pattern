@@ -1,10 +1,9 @@
 import { AbstractBedRoom } from '@/creational-pattern/abstract-factory/intefaces/component.interface';
 
-
 class Bedroom implements AbstractBedRoom {
-    lengthRoom: number = 40;
+    lengthRoom = 40;
 
-    widthRoom: number = 40;
+    widthRoom = 40;
 
     bedMerk(): string {
         return 'bed classic';

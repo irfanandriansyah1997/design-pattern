@@ -6,7 +6,9 @@ import LoggerBuilder from '../builder/logger.builder';
  * @param {'error' | 'debug' | 'info' | 'log'} type - logger
  * @since 2020.07.31
  */
-export const loggerWithArgument = (type: 'error' | 'debug' | 'info' | 'log') => (
+export const loggerWithArgument = (
+    type: 'error' | 'debug' | 'info' | 'log'
+) => (
     _: object,
     propertyName: string,
     propertyDesciptor: PropertyDescriptor

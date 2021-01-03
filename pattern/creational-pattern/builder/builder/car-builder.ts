@@ -1,11 +1,17 @@
-import { CarProductInterface, CarEngineType, CarBreakSystemType } from '@/creational-pattern/builder/interfaces/product.interface';
-import { BuilderInterface, Constructable } from '@/creational-pattern/builder/interfaces/component.interface';
-
+import {
+    CarProductInterface,
+    CarEngineType,
+    CarBreakSystemType
+} from '@/creational-pattern/builder/interfaces/product.interface';
+import {
+    BuilderInterface,
+    Constructable
+} from '@/creational-pattern/builder/interfaces/component.interface';
 
 /**
  * Car Builder Class
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2020.02.03
  */
 class CarBuilder implements BuilderInterface<
@@ -20,7 +26,9 @@ class CarBuilder implements BuilderInterface<
         this.product = this.reset(classProduct);
     }
 
-    reset(classProduct: Constructable<CarProductInterface>): CarProductInterface {
+    reset(
+        classProduct: Constructable<CarProductInterface>
+    ): CarProductInterface {
         return new classProduct();
     }
 

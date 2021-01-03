@@ -16,7 +16,10 @@ export const loggerWithoutDecorator = (
     propertyDesciptor.value = function (...args: any[]) {
         const date = new Date().toUTCString();
 
-        new LoggerBuilder().setMessage(`[${date}]: DEBUG - call method ${propertyName}`).setType('log').execute();
+        new LoggerBuilder()
+            .setMessage(`[${date}]: DEBUG - call method ${propertyName}`)
+            .setType('log')
+            .execute();
         return method.apply(this, args);
     };
     return propertyDesciptor;

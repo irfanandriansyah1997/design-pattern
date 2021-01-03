@@ -4,7 +4,10 @@
  * @param {boolean} enumerable - enumarable property
  * @since 2020.07.31
  */
-export const Integer = (enumerable: boolean) => (target: Object, propertyName: string): void => {
+export const Integer = (enumerable: boolean) => (
+    target: Object,
+    propertyName: string
+): void => {
     let _response: number = (target as Record<string, number>)[propertyName];
 
     /**
@@ -12,7 +15,11 @@ export const Integer = (enumerable: boolean) => (target: Object, propertyName: s
      * @return {number}
      */
     const getter = (): number => {
-        if (typeof _response === 'number' || typeof _response === 'bigint' || /^\d+$/.test(`${_response}`)) {
+        if (
+            typeof _response === 'number' ||
+            typeof _response === 'bigint' ||
+            /^\d+$/.test(`${_response}`)
+        ) {
             return _response;
         }
 
@@ -25,7 +32,11 @@ export const Integer = (enumerable: boolean) => (target: Object, propertyName: s
      * @return {number}
      */
     const setter = (value: unknown): void => {
-        if (typeof value === 'number' || typeof value === 'bigint' || /^\d+$/.test(`${value}`)) {
+        if (
+            typeof value === 'number' ||
+            typeof value === 'bigint' ||
+            /^\d+$/.test(`${value}`)
+        ) {
             _response = value as number;
         }
     };

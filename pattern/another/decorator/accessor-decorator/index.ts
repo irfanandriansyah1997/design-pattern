@@ -1,16 +1,16 @@
 import enumerable from './decorator/accessor-decorator';
 
 class Employee {
-    private _salary: number = 0;
-    private _name: string = '';
+    private _salary = 0;
+    private _name = '';
 
     @enumerable(false)
-    get salary() {
+    get salary(): string {
         return `Rs. ${this._salary}`;
     }
 
-    set salary(salary: any) {
-        this._salary = +salary;
+    set salary(salary: string) {
+        this._salary = +parseInt(salary, 10);
     }
 
     @enumerable(true)
@@ -24,7 +24,7 @@ class Employee {
 }
 
 const emp = new Employee();
-emp.salary = 1000;
-for (let prop in emp) {
+emp.salary = '1000';
+for (const prop in emp) {
     console.log(`enumerable property = ${prop}`);
 }

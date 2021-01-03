@@ -1,8 +1,8 @@
-export type roomType = 'modern' | 'clasics'
+export type roomType = 'modern' | 'clasics';
 
 /**
  * House Factory
- * @author Irfan Andriansyah <irfan@99.co> 
+ * @author Irfan Andriansyah <irfan@99.co>
  * @since 2020.02.03
  */
 export interface HouseFactory {
@@ -48,11 +48,10 @@ export interface AbstractLivingRoom extends AbstractRoom {
     isHaveRugs(): boolean;
 }
 
-
 /**
  * client code response
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2020.02.03
  */
 export interface clientCodeResponseInterface {
@@ -60,11 +59,11 @@ export interface clientCodeResponseInterface {
         bedMerk: string;
 
         isHaveChair: boolean;
-        
+
         isHaveTV: boolean;
 
         widthRoom: number;
-    
+
         lengthRoom: number;
     };
 
@@ -76,7 +75,7 @@ export interface clientCodeResponseInterface {
         isHaveTV: boolean;
 
         widthRoom: number;
-    
+
         lengthRoom: number;
     };
 
