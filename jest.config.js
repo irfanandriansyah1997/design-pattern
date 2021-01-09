@@ -6,9 +6,7 @@ module.exports = {
     },
     collectCoverage: true,
     testURL: 'http://localhost/',
-    collectCoverageFrom: [
-        'pattern/**/*.{js,jsx,ts,tsx}'
-    ],
+    collectCoverageFrom: ['pattern/**/*.{js,jsx,ts,tsx}', '!pattern/utils/**/*.{js,jsx,ts,tsx}'],
     coverageDirectory: '.jest_coverage/',
     coverageReporters: ['json', 'lcov', 'text', 'clover'],
     moduleFileExtensions: ['js', 'jsx', 'es6', 'ts', 'tsx'],
@@ -25,7 +23,5 @@ module.exports = {
     },
     transformIgnorePatterns: ['node_modules/'],
     snapshotSerializers: ['enzyme-to-json/serializer'],
-    setupFilesAfterEnv: [
-        'jest-canvas-mock'
-    ]
+    setupFilesAfterEnv: ['jest-canvas-mock']
 };
