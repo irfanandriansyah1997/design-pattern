@@ -17,7 +17,7 @@ export const CHANGELOG_TYPES: ChangeLogMessageInterface[] = [
         title: 'CI / CD'
     },
     {
-        prefix: 'chores(',
+        prefix: 'chore(',
         type: 'chores',
         title: 'Chores'
     }
