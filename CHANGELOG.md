@@ -1,3 +1,8 @@
+# Version 1.0.7 (2021-01-09)
+
+## Fix
+*  add validation if commit message if not found ([ae52f9](https://github.com/irfanandriansyah1997/design-pattern/commit/ae52f9edfa43e631ac53f595d81976236118afc3))
+
 # Version 1.0.4 (2021-01-09)
 
 ## Features
