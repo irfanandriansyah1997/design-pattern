@@ -40,11 +40,11 @@ class ChangeLogVersionHelper {
             const [major, minor, patch] = versionSplit;
 
             if (type === 'major') {
-                return `${parseInt(major, 10) + 1}.${minor}.${patch}`;
+                return `${parseInt(major, 10) + 1}.0.0`;
             }
 
             if (type === 'minor') {
-                return `${major}.${parseInt(minor, 10) + 1}.${patch}`;
+                return `${major}.${parseInt(minor, 10) + 1}.0`;
             }
 
             if (type === 'patch') {
