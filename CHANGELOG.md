@@ -1,3 +1,9 @@
+# Version 3.0.0 (2021-01-09)
+
+## Fix
+*  update default value if select major & minor version ([389ad8](https://github.com/irfanandriansyah1997/design-pattern/commit/389ad81bce8b5611e46ac28356f6a4f8f0569ac0))
+*  add ignore file for unit test ([ec83b9](https://github.com/irfanandriansyah1997/design-pattern/commit/ec83b91fc453abd589402f243d5db06aa32809fa))
+
 # Version 1.0.7 (2021-01-09)
 
 ## Fix
