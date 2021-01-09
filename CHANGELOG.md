@@ -1,3 +1,8 @@
+# Version 3.0.1 (2021-01-09)
+
+## Features
+*  create sample abstract factory ([0318b5](https://github.com/irfanandriansyah1997/design-pattern/commit/0318b5cd68641ceaec7003e029b576ab1c841c06))
+
 # Version 3.0.0 (2021-01-09)
 
 ## Fix
