@@ -23,7 +23,7 @@ export const CHANGELOG_TYPES: ChangeLogMessageInterface[] = [
     }
 ];
 
-export const CHANGELOG_WRITE_PATH = './CHANGELOG';
+export const CHANGELOG_WRITE_PATH = './CHANGELOG.md';
 
 export const PACKAGE_WRITE_PATH = './package.json';
 

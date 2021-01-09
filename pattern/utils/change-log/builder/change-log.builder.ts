@@ -30,7 +30,7 @@ class ChangeLogBuilder {
 
         ChangeLogGitHelper.updateChangelog(version);
         ChangeLogVersionHelper.updatePackageJSON(version);
-        // ChangeLogGitHelper.commitVersion(version);
+        ChangeLogGitHelper.commitVersion(version);
     }
 }
 

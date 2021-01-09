@@ -100,7 +100,7 @@ class ChangeLogGitHelper {
      */
     public static commitVersion(version: string): void {
         child.execSync('git add .');
-        child.execSync(`git commit -m "chore(version): Bump to version ${version}"`);
+        child.execSync(`git commit -n -m "chore(version): Bump to version ${version}"`);
         child.execSync(`git tag -a -m "Tag for version ${version}" v${version}`);
     }
 }

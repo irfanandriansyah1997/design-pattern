@@ -54,7 +54,7 @@ class ChangeLogFileHelper {
     public static writeChangelog(newContent: string): void {
         const oldContent = ChangeLogFileHelper.getChangeLogContent();
 
-        fs.writeFileSync(PACKAGE_WRITE_PATH, `${newContent}${oldContent}`);
+        fs.writeFileSync(CHANGELOG_WRITE_PATH, `${newContent}${oldContent}`);
     }
 }
 
