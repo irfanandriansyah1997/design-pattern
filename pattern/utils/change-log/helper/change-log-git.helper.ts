@@ -53,25 +53,29 @@ class ChangeLogGitHelper {
             }
         ).filter(({ messages }) => messages !== undefined && messages.length > 0);
 
-        let response = `# Version ${version} (${new Date().toISOString().split('T')[0]})\n\n`;
-        response += temporary
-            .map(({ messages, title }): string => {
-                let response = `## ${title}\n`;
+        if (temporary.length > 0) {
+            let response = `# Version ${version} (${new Date().toISOString().split('T')[0]})\n\n`;
+            response += temporary
+                .map(({ messages, title }): string => {
+                    let response = `## ${title}\n`;
 
-                if (messages) {
-                    messages.forEach((item) => {
-                        response += item;
-                    });
-                    response += '\n';
-                }
+                    if (messages) {
+                        messages.forEach((item) => {
+                            response += item;
+                        });
+                        response += '\n';
+                    }
 
-                return response;
-            })
-            .reduce((prev, current) => {
-                return `${prev}${current}`;
-            }, '');
+                    return response;
+                })
+                .reduce((prev, current) => {
+                    return `${prev}${current}`;
+                }, '');
 
-        return response;
+            return response;
+        }
+
+        return '';
     }
 
     /**
