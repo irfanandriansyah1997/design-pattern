@@ -1,7 +1,7 @@
 /**
  * Sample Func
  * @author Irfan Andriansyah <irfan@99.co>
- * @description 
+ * @description
  * @since 2021.01.03
  */
 const SampleFunc = (): number => {
