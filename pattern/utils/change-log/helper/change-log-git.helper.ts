@@ -102,6 +102,7 @@ class ChangeLogGitHelper {
         child.execSync('git add .');
         child.execSync(`git commit -n -m "chore(version): Bump to version ${version}"`);
         child.execSync(`git tag -a -m "Tag for version ${version}" v${version}`);
+        child.execSync('git push --tags');
     }
 }
 
