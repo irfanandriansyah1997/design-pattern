@@ -1,3 +1,8 @@
+# Version 3.0.5 (2021-01-11)
+
+## Fix
+*  remove unused code ([99922f](https://github.com/irfanandriansyah1997/design-pattern/commit/99922f82d6bd94db254db8a351a54d1562fd9945))
+
 # Version 3.0.4 (2021-01-11)
 
 ## Features
