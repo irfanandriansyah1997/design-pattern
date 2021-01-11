@@ -33,7 +33,10 @@ class ChangeLogVersionHelper {
      * Formatted Version
      * @returns {string}
      */
-    private static formattedVersion(version: string, type: ChangeLogType): string {
+    private static formattedVersion(
+        version: string,
+        type: ChangeLogType
+    ): string {
         const versionSplit = version.split('.');
 
         if (versionSplit.length === 3) {

@@ -1,3 +1,17 @@
+# Version 3.0.3 (2021-01-11)
+
+## Fix
+*  update commit exec for commit ([70498f](https://github.com/irfanandriansyah1997/design-pattern/commit/70498fddd94c0d8693a5ec4aeee23eb9b0195857))
+
+# Version 3.0.2 (2021-01-11)
+
+## Features
+*  create sample example builder pattern ([ba46b6](https://github.com/irfanandriansyah1997/design-pattern/commit/ba46b697ac7e6455115295a874f9fda60147a0f6))
+
+## Fix
+*  fix code autoformatter ([9ed1d5](https://github.com/irfanandriansyah1997/design-pattern/commit/9ed1d592034ed42333566b3c18a6e6210de241e3))
+*  fix config eslint ([19f290](https://github.com/irfanandriansyah1997/design-pattern/commit/19f2900f0059c9f55f2603fcde1e7dceabd70a68))
+
 # Version 3.0.1 (2021-01-09)
 
 ## Features

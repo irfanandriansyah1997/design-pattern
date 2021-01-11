@@ -10,8 +10,7 @@
         "eslint:recommended",
         "eslint-config-prettier",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "plugin:prettier/recommended"
+        "prettier/@typescript-eslint"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -44,6 +43,7 @@
         ],
         // custom setting
         "@typescript-eslint/ban-types": ["off"],
+        "object-property-newline": ["error"],
         "sort-destructure-keys/sort-destructure-keys": [
             "error",
             {
@@ -78,7 +78,9 @@
         "require-jsdoc-except/require-jsdoc": [
             "error",
             {
-                "ignore": [],
+                "ignore": [
+                    "constructor"
+                ],
                 "require": {
                     "ArrowFunctionExpression": true,
                     "ClassDeclaration": true,

@@ -16,11 +16,15 @@ describe('Testing method factory', () => {
 
     describe('Testing access method some operation each concrete creator', () => {
         it('Testing Product 1', () => {
-            expect(new ConcreteCreator1().someOperation()).toBe('Sample output from Product 1');
+            expect(new ConcreteCreator1().someOperation()).toBe(
+                'Sample output from Product 1'
+            );
         });
 
         it('Testing Product 2', () => {
-            expect(new ConcreteCreator2().someOperation()).toBe('Sample output from Product 2');
+            expect(new ConcreteCreator2().someOperation()).toBe(
+                'Sample output from Product 2'
+            );
         });
     });
 });

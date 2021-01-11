@@ -105,3 +105,6 @@ dist
 
 # jest
 .jest_coverage
+
+# vscode
+.vscode
