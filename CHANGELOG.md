@@ -1,3 +1,8 @@
+# Version 3.0.3 (2021-01-11)
+
+## Fix
+*  update commit exec for commit ([70498f](https://github.com/irfanandriansyah1997/design-pattern/commit/70498fddd94c0d8693a5ec4aeee23eb9b0195857))
+
 # Version 3.0.2 (2021-01-11)
 
 ## Features
