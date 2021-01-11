@@ -36,10 +36,14 @@ class ChangeLogGitHelper {
                 unformattedCommit.map((commit) => {
                     if (commit.message.startsWith(prefix)) {
                         messages.push(
-                            `* ${commit.message.split(':')[1]} ([${commit.sha.substring(
+                            `* ${
+                                commit.message.split(':')[1]
+                            } ([${commit.sha.substring(
                                 0,
                                 6
-                            )}](https://github.com/irfanandriansyah1997/design-pattern/commit/${commit.sha}))\n`
+                            )}](https://github.com/irfanandriansyah1997/design-pattern/commit/${
+                                commit.sha
+                            }))\n`
                         );
                     }
                 });
@@ -51,10 +55,14 @@ class ChangeLogGitHelper {
                     messages
                 };
             }
-        ).filter(({ messages }) => messages !== undefined && messages.length > 0);
+        ).filter(
+            ({ messages }) => messages !== undefined && messages.length > 0
+        );
 
         if (temporary.length > 0) {
-            let response = `# Version ${version} (${new Date().toISOString().split('T')[0]})\n\n`;
+            let response = `# Version ${version} (${
+                new Date().toISOString().split('T')[0]
+            })\n\n`;
             response += temporary
                 .map(({ messages, title }): string => {
                     let response = `## ${title}\n`;
@@ -83,8 +91,15 @@ class ChangeLogGitHelper {
      * @returns {ChangeLogGitOutputInterface[]}
      */
     private static generateUnformattedCommitMessage(): ChangeLogGitOutputInterface[] {
-        const latestTag = child.execSync('git describe --long').toString('utf-8').split('-')[0];
-        const output = child.execSync(`git log ${latestTag}..HEAD --format=%B%H----DELIMITER----`).toString('utf-8');
+        const latestTag = child
+            .execSync('git describe --long')
+            .toString('utf-8')
+            .split('-')[0];
+        const output = child
+            .execSync(
+                `git log ${latestTag}..HEAD --format=%B%H----DELIMITER----`
+            )
+            .toString('utf-8');
 
         return output
             .split('----DELIMITER----\n')
@@ -92,7 +107,10 @@ class ChangeLogGitHelper {
                 (commit): ChangeLogGitOutputInterface => {
                     const [message, sha] = commit.split('\n');
 
-                    return { sha, message };
+                    return {
+                        sha,
+                        message
+                    };
                 }
             )
             .filter((commit) => Boolean(commit.sha));
@@ -104,8 +122,12 @@ class ChangeLogGitHelper {
      */
     public static commitVersion(version: string): void {
         child.execSync('git add .');
-        child.execSync(`git commit -n -m "chore(version): Bump to version ${version}"`);
-        child.execSync(`git tag -a -m "Tag for version ${version}" v${version}`);
+        child.execSync(
+            `git commit -n -m "chore(version): Bump to version ${version}"`
+        );
+        child.execSync(
+            `git tag -a -m "Tag for version ${version}" v${version}`
+        );
         child.execSync('git push --tags');
     }
 }
