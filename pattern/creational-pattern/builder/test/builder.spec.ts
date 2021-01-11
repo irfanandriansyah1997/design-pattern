@@ -9,9 +9,7 @@ describe('Testing Builder', () => {
             director.setBuilder(builder);
             director.buildMinimalViableProduct();
 
-            expect(builder.product.listParts()).toBe(
-                'Product parts: Part A'
-            );
+            expect(builder.product.listParts()).toBe('Product parts: Part A');
         });
 
         it('Build Full Product', () => {
@@ -26,10 +24,20 @@ describe('Testing Builder', () => {
     });
 
     describe('Testing Without Director', () => {
-        it('Build Minimal Viable Product', () => {
+        it('Build With Random Product', () => {
             expect(
                 new ConcreteBuilder1()
                     .productPartA()
+                    .productPartC()
+                    .product.listParts()
+            ).toBe('Product parts: Part A, Part C');
+        });
+
+        it('Build With Duplicate Product', () => {
+            expect(
+                new ConcreteBuilder1()
+                    .productPartA()
+                    .productPartC()
                     .productPartC()
                     .product.listParts()
             ).toBe('Product parts: Part A, Part C');
