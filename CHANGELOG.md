@@ -1,3 +1,11 @@
+# Version 3.0.4 (2021-01-11)
+
+## Features
+*  create sample code prototype pattern ([2e2f4f](https://github.com/irfanandriansyah1997/design-pattern/commit/2e2f4f87a2d6f787ee89f9e0637e4e41cd177ee2))
+
+## Fix
+*  fix tsconfig and add test case if generate duplicate product ([115d76](https://github.com/irfanandriansyah1997/design-pattern/commit/115d766f132ed50451556e41d7949e9fef822fb7))
+
 # Version 3.0.3 (2021-01-11)
 
 ## Fix
