@@ -1,3 +1,12 @@
+# Version 3.0.6 (2021-01-16)
+
+## Features
+*  create sample code adapter ([06bb18](https://github.com/irfanandriansyah1997/design-pattern/commit/06bb18583214d21b055ef699f3bf74d0383353c4))
+*  create sample singleton ([f589c7](https://github.com/irfanandriansyah1997/design-pattern/commit/f589c7fbab392b7aff5f9c8873b68637091b47ec))
+
+## Fix
+*  remove unused code ([8e4a5c](https://github.com/irfanandriansyah1997/design-pattern/commit/8e4a5cea8ff11b2a4a162c73152a1edd344ec8f0))
+
 # Version 3.0.5 (2021-01-11)
 
 ## Fix
