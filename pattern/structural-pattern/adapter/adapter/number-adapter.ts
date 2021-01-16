@@ -31,7 +31,7 @@ class NumberToStringAdapter implements AdapterInterface<string, number> {
      */
     public static getInstance(): AdapterInterface<string, number> {
         if (NumberToStringAdapter.instance === undefined) {
-            return new NumberToStringAdapter();
+            NumberToStringAdapter.instance = new NumberToStringAdapter();
         }
 
         return NumberToStringAdapter.instance;
