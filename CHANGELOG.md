@@ -1,3 +1,8 @@
+# Version 3.0.7 (2021-01-16)
+
+## Features
+*  implement singleton in adapter ([e8a620](https://github.com/irfanandriansyah1997/design-pattern/commit/e8a620fee2bb5c09a40f09537f39ac5491e0e67d))
+
 # Version 3.0.6 (2021-01-16)
 
 ## Features
