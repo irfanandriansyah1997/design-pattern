@@ -43,7 +43,6 @@
         ],
         // custom setting
         "@typescript-eslint/ban-types": ["off"],
-        "object-property-newline": ["error"],
         "sort-destructure-keys/sort-destructure-keys": [
             "error",
             {

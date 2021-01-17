@@ -1,3 +1,12 @@
+# Version 3.0.8 (2021-01-17)
+
+## Features
+*  create sample code composite ([350fdb](https://github.com/irfanandriansyah1997/design-pattern/commit/350fdb0c77d0cf20732dc07c58f52358ce17b13b))
+*  create sample example bridge ([ce1e05](https://github.com/irfanandriansyah1997/design-pattern/commit/ce1e05439e0859dc19c8a3586aa69ba59312b009))
+
+## Fix
+*  remove unused code ([d4b89a](https://github.com/irfanandriansyah1997/design-pattern/commit/d4b89a6b2c6fac37e403166f538560d577453190))
+
 # Version 3.0.7 (2021-01-16)
 
 ## Features

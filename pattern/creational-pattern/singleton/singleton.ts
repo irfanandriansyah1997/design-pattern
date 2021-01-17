@@ -12,7 +12,6 @@ class Singleton {
      */
     public static getInstance(): Singleton {
         if (!Singleton.instance) {
-            console.debug('damn');
             Singleton.instance = new Singleton();
         }
 
