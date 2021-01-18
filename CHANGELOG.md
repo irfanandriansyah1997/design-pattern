@@ -1,3 +1,9 @@
+# Version 3.0.9 (2021-01-18)
+
+## Features
+*  create sample pattern facade ([7ed782](https://github.com/irfanandriansyah1997/design-pattern/commit/7ed78231df6560761dce2de7f74783f6111fcda6))
+*  create sample case decorator ([5131fe](https://github.com/irfanandriansyah1997/design-pattern/commit/5131fe0c34d8a9877469cb1c5971b2ee74701955))
+
 # Version 3.0.8 (2021-01-17)
 
 ## Features
