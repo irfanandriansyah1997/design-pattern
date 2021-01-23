@@ -1,3 +1,13 @@
+# Version 4.0.0 (2021-01-23)
+
+## Features
+*  create sample code for proxy ([9bd57d](https://github.com/irfanandriansyah1997/design-pattern/commit/9bd57dd4c1c83ba1379ad4bf413a10a6d17ffe48))
+*  create sample pattern facade ([943e9a](https://github.com/irfanandriansyah1997/design-pattern/commit/943e9a63298228b68cf9ddea66623b09bf27b320))
+*  create sample case decorator ([18f954](https://github.com/irfanandriansyah1997/design-pattern/commit/18f954e819f77b08e1e1b73e3ace2cb1bc64bbb2))
+
+## Chores
+*  Bump to version 3.0.9 ([80cbe9](https://github.com/irfanandriansyah1997/design-pattern/commit/80cbe942f2ded24ab9775644d5a0e3d15dedcc30))
+
 # Version 3.0.9 (2021-01-18)
 
 ## Features
